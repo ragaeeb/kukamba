@@ -37,6 +37,7 @@ bun add kukamba
 
 ```typescript
 import { LlmClient, ApiKeyManager, LoadBalancingStrategy } from 'kukamba';
+import { GoogleGenAI } from '@google/genai';
 
 // Set up your API keys
 const keyManager = new ApiKeyManager(

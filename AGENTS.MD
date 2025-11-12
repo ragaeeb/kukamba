@@ -17,13 +17,11 @@ This document provides comprehensive information about the Kukamba project struc
 ```
 kukamba/
 ├── src/
-│   ├── lib/
-│   │   ├── ApiKeyManager.ts       # Core key management with health tracking
-│   │   ├── LlmClient.ts           # Generic LLM client with retry logic
-│   │   └── index.ts               # Public API exports
-│   └── __tests__/
-│       ├── ApiKeyManager.test.ts  # Unit tests for ApiKeyManager
-│       └── LlmClient.test.ts      # Unit tests for LlmClient
+│   │── keyManager.ts       # Core key management with health tracking
+│   ├── keyManager.test.ts  # Unit tests for ApiKeyManager
+│   ├── client.ts           # Generic LLM client with retry logic
+│   └── client.test.ts      # Unit tests for LlmClient
+│   └── index.ts               # Public API exports
 ├── package.json                    # Package configuration
 ├── tsconfig.json                   # TypeScript configuration
 ├── biome.json                      # Biome linter configuration
