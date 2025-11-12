@@ -1,0 +1,63 @@
+{
+    "author": "Ragaeeb Haq",
+    "bugs": {
+        "url": "https://github.com/ragaeeb/kukamba/issues"
+    },
+    "description": "Intelligent API key rotation and parallel request management for LLM providers",
+    "devDependencies": {
+        "@biomejs/biome": "^2.3.5",
+        "@types/bun": "^1.3.2",
+        "tsdown": "^0.16.2"
+    },
+    "engines": {
+        "bun": ">=1.3.2",
+        "node": ">=22.0.0"
+    },
+    "exports": {
+        ".": {
+            "import": "./dist/index.mjs",
+            "require": "./dist/index.js",
+            "types": "./dist/index.d.ts"
+        }
+    },
+    "files": [
+        "dist",
+        "README.md",
+        "LICENSE"
+    ],
+    "homepage": "https://github.com/ragaeeb/kukamba#readme",
+    "keywords": [
+        "llm",
+        "api",
+        "rate-limit",
+        "key-rotation",
+        "openai",
+        "anthropic",
+        "gemini",
+        "claude",
+        "parallel",
+        "retry",
+        "circuit-breaker",
+        "load-balancing",
+        "typescript"
+    ],
+    "license": "MIT",
+    "main": "./dist/index.js",
+    "module": "./dist/index.mjs",
+    "name": "kukamba",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/ragaeeb/kukamba.git"
+    },
+    "scripts": {
+        "build": "tsdown",
+        "format": "biome format --write .",
+        "lint": "biome check .",
+        "lint:fix": "biome check --write .",
+        "prepublishOnly": "bun run build && bun test"
+    },
+    "sideEffects": false,
+    "type": "module",
+    "types": "./dist/index.d.ts",
+    "version": "1.0.0"
+}
