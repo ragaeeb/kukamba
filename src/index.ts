@@ -5,4 +5,5 @@
 
 export * from './client';
 export * from './keyManager';
+export * from './types';
 export * from './utils';
